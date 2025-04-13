@@ -1,0 +1,1 @@
+web: gunicorn nube_prube.wsgi
