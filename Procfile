@@ -1,1 +1,1 @@
-web: gunicorn nube_prube.wsgi
+web: python manage.py collectstatic && gunicorn nube_prube.wsgi
