@@ -1,3 +1,6 @@
 venv
 __pycache__
 db.sqilite3
+
+staticfiles
+.env
