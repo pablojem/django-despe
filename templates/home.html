@@ -1,18 +1,286 @@
+{% extends 'base.html' %}
+
 {% load static %}
 
-<h1>
-    HOME
-</h1>
+
+  {% block content %}
+
+     
+  <section class="hero_section ">
+    <div class="hero-container container">
+      <div class="hero_detail-box">
+        <h3>
+          Centro Educativo <br>
+          
+        </h3>
+        <h1>
+          Despertares
+        </h1>
+        <p>
+          En el Centro Educativo Terapéutico DESPERTARES realizamos el abordaje de niños y jóvenes
+          con trastornos neurológicos de una manera integral en su proceso de crecimiento y desarrollo.
+          Integrando en el mismo a sus familias como parte importante del funcionamiento.
+        </p>
+        <div class="hero_btn-continer">
+          <a href="" class="call_to-btn btn_white-border">
+            <span>
+              Contactenos
+            </span>
+            <img src="{% static 'images/right-arrow.png' %}" alt="">
+            
+          </a>
+        </div>
+      </div>
+      <div class="hero_img-container">
+        <div>
+          <img src="{% static 'images/despertarse.png' %}"  alt="imagen principal" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- end header section -->
 
 
-<ul>
-    <li>
-        <a href="/">home</a>
-        <img src="{% static 'images/baner1.png' %}" width="50%">
-    </li>
+  <!-- about section -->
+  <section id="nosotros" class="about_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        Sobre Nosotros
+      </h2>
+      <p class="text-center">
+        Somos un equipo de profesionales convocados en la constante búsqueda de recursos clínicos y educativos innovadores <br>
+        para poder brindar abordaje a las complejidades que trae consigo cada sujeto con discapacidad.
+      </p>
+      <div class="about_img-box ">
+        <img src="{% static 'images/kids.jpg' %}" class="img-fluid w-100" alt="">
+      </div>
+      <div class="d-flex justify-content-center mt-5">
+        <a href="" class="call_to-btn  ">
 
-    <li>
-        <a href="/blog">blog</a>
-    </li>
-</ul>
+          <span>
+            Ver más
+          </span>
+          <img src="{% static 'images/right-arrow.png' %}" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
 
+
+  <!-- about section -->
+
+  <!-- teacher section -->
+  <section class="teacher_section layout_padding-bottom">
+    <div class="container">
+      <h2 class="main-heading ">
+        Nuestros profesionales
+      </h2>
+      <p class="text-center">
+        Contamos con un equipo de exelencia, altamente capacitado
+      </p>
+      <div class="teacher_container layout_padding2">
+        <div class="card-deck">
+          <div class="card">
+            <h5 class="card-title">Juan</h5>
+            <img class="card-img-top" src="{% static 'images/teacher-1.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">educacion fisica</h5>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-title">Andrea</h5>
+            <img class="card-img-top" src="{% static 'images/teacher-2.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Psicologia</h5>
+            </div>
+
+          </div>
+          <div class="card">
+            <h5 class="card-title">Aldana</h5>
+
+            <img class="card-img-top" src="{% static 'images/teacher-3.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Terapia Ocupacional</h5>
+
+            </div>
+
+          </div>
+
+          <div class="card">
+            <h5 class="card-title">Marta</h5>
+            <img class="card-img-top" src="{% static 'images/teacher-4.jpg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Neurolenguista</h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="d-flex justify-content-center mt-3">
+        <a href="" class="call_to-btn  ">
+
+          <span>
+            Ver más
+          </span>
+          <img src="{% static 'images/right-arrow.png' %}" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- teacher section -->
+
+  <!-- vehicle section -->
+  <section class="vehicle_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        Servicio de Translado
+      </h2>
+      <p class="text-center">
+        Contamos con un Servicio de Translado de calidad, con asistencia  y acompañamiento a cargo 
+        de gente especializada en el area <br> y muchos años de experiencia que nos avalan
+      </p>
+      <div class="layout_padding-top">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="vehicle_img-box ">
+                <img src="{% static 'images/bus.png' %}" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="vehicle_img-box ">
+                <img src="{% static 'images/bus.png' %}" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="vehicle_img-box ">
+                <img src="{% static 'images/bus.png' %}" alt="" class="img-fluid w-100">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- vehicle section -->
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <h2 class="main-heading ">
+        Sus opiniones nos importan
+      </h2>
+      <p class="text-center">
+        Somos un establecimiento que prioriza la opinion de los padres. <br> buscando conjuntamente
+        lo mejor para sus hijos
+      </p>
+      <div class="layout_padding2">
+        <div class="client_container d-flex flex-column">
+          <div class="client_detail d-flex align-items-center">
+            <div class="client_img-box ">
+              <img src="{% static 'images/student.png' %}" alt="">
+            </div>
+            <div class="client_detail-box">
+              <h4>
+                Vanesa Vigore
+              </h4>
+              <span>
+                (Mama de Facu)
+              </span>
+            </div>
+          </div>
+          <div class="client_text mt-4">
+            <p>
+              "En despertares encontramos un lugar de gran comprension, de gran ayuda y de mucho acompañamiento. </br>
+              En nuestro caso en particular llegamos a Despertares un poco desorientados y con muchas dudas sobre 
+              como podia llegar a hacer la adaptacion de Facu en un lugar totalmente nuevo para el;</br>
+              Y sinceramente nos sorprendio la dedicacion y el compromiso de todo el establecimiento y el seguimiento 
+              no solo de nuestro hijo sino de toda la familia logrando una absoluta integracion.<br>
+              Realmente no tenemos mas que palabras de agradecimientos con ellos"
+
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- client section -->
+
+  <!-- contact section -->
+
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+
+      <h2 class="main-heading">
+        Contactenos
+
+      </h2>
+      <p class="text-center">
+        <b> Dirección:</b> Tte. Gral. E. Racedo 188, Ezeiza, Provincia de Buenos Aires
+
+      </p>
+      <div class="">
+        <div class="contact_section-container">
+          <div class="row">
+            <div class="col-md-6 mx-auto">
+              <div class="contact-form">
+                <form action="">
+                  <div>
+                    <input type="text" placeholder="Nombre">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Telefono">
+                  </div>
+                  <div>
+                    <input type="email" placeholder="Email">
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Mensaje" class="input_message">
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button  type="submit" class="btn_on-hover">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- end contact section -->
+
+
+
+
+
+</body>
+
+</html>
+
+{% endblock %}
